@@ -1,0 +1,13 @@
+def flatten_list(lst):
+    flat_list=[]
+    for element in lst:
+        if type(element) is list:
+            for item in element:
+                flat_list.append(item)
+        else:
+             flat_list.append(element)
+    return flat_list
+   
+lst=[[11,22,33,44],[55,66,77],[88],99]
+print('list:',lst)
+print('Flat list:',flatten_list(lst))
