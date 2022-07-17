@@ -1,0 +1,14 @@
+def remove_duplicates(string):
+    s=set(string)
+    s="".join(s)
+    print('Without order:',s)
+    t=""
+    for i in string:
+        if i in t:
+            pass
+        else:
+            t=t+i
+    print('With order:',t)
+
+string="Asrithabvns"
+remove_duplicates(string)
